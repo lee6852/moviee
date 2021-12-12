@@ -1,0 +1,34 @@
+/** 로컬 프로젝트를 GitHub Repository에 Push하기 **/
+// git project로 관리하기위한 .git을 생성해줌.
+git init 
+
+// git 프로젝트의 파일 상태를 확인.
+git status
+
+// git commit할 파일을 추가해줍니다. git add 뒤에 .일 경우 모든 파일 선택.
+git add .
+
+// git 프로젝트의 파일 상태를 확인.
+git status
+
+// git commit 명령어
+// git commit -m "{commit id}"
+git commit -m "create project"
+
+git branch -M main
+
+// github repository 지정
+// git remote add origin {git repository url}
+git remote add origin https://github.com/herojoon/sample-project.git
+
+// push
+git push -u origin main
+
+// GitHub Repository를 private로 생성한 경우 인증정보 입력.
+// 기존에는 Password란에 GitHub Password를 입력하였으나 
+// 2021년 8월 13일부터 Password란에 토큰 입력으로 변경됨.
+// 토큰 발급 방법은 https://herojoon-dev.tistory.com/108 참고
+Username for 'https://github.com': lee6852
+Password for 'https://깃헙계정@github.com': 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
+
+/** 로컬 프로젝트를 GitHub Repository에 Push 완료 **/
